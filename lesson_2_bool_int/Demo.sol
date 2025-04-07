@@ -9,14 +9,14 @@ contract Demo {
 
     function myFunc(bool _inputBool) public {
         bool localBool = false; // local
-        localBool && _inputBool; // AND
-        localBool || _inputBool; // OR
-        localBool == _inputBool; // EQUAL
-        localBool != _inputBool; // NOT EQUAL
-        !localBool; // NOT
+        // localBool && _inputBool; // AND
+        // localBool || _inputBool; // OR
+        // localBool == _inputBool; // EQUAL
+        // localBool != _inputBool; // NOT EQUAL
+        // !localBool; // NOT
 		
         if(_inputBool || localBool) {
-          myBool = _inputBool
+          myBool = _inputBool;
         }
     }
 		
@@ -48,7 +48,7 @@ contract Demo {
 		
 		
 		// MATH
-		function math(uint _inputUint) public {
+		function math(uint _inputUint) public view {
         uint localUint = 42;
         localUint + 1;
         localUint - 1;
@@ -56,7 +56,7 @@ contract Demo {
         localUint / 2;
         localUint ** 3;
         localUint % 3;
-        -myInt;g
+        -myInt;
 
         localUint == 1;
         localUint != 1;
